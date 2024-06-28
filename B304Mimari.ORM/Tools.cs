@@ -2,18 +2,37 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data.SqlClient;
-
+using Microsoft.IdentityModel.Protocols;
+using System.Configuration;
 
 namespace B304Mimari.ORM
 {
     public class Tools
     {
+        //Singleton Pattern
+        private static SqlConnection baglanti;
 
-        private SqlConnection baglanti;
-
-        public SqlConnection Baglanti
+        public static SqlConnection Baglanti
         {
-            get { return baglanti; }
+            get 
+            {
+                if (baglanti == null)
+                {
+
+                    baglanti = new SqlConnection(ConfigurationManager.ConnectionStrings["LocalBaglanti"].ConnectionString);
+
+
+                }
+
+
+                //baglanti = baglanti ?? new SqlConnection(); //baglantiya atama yap baglanti null sa newle
+
+
+                return baglanti; 
+            
+            
+            
+            }
             set { baglanti = value; }
 
 
