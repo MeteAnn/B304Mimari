@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Data.SqlClient;
 using Microsoft.IdentityModel.Protocols;
 using System.Configuration;
+using Microsoft.Data.SqlClient;
+
 
 namespace B304Mimari.ORM
 {
@@ -14,7 +15,7 @@ namespace B304Mimari.ORM
 
         public static SqlConnection Baglanti
         {
-            get 
+            get
             {
                 if (baglanti == null)
                 {
@@ -28,10 +29,10 @@ namespace B304Mimari.ORM
                 //baglanti = baglanti ?? new SqlConnection(); //baglantiya atama yap baglanti null sa newle
 
 
-                return baglanti; 
-            
-            
-            
+                return baglanti;
+
+
+
             }
             set { baglanti = value; }
 

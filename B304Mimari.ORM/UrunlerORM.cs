@@ -5,12 +5,12 @@ using System.Text;
 
 namespace B304Mimari.ORM
 {
-    public class UrunlerORM :ORMBase<Urunler>
+    public class UrunlerORM : ORMBase<Urunler>
     {
 
         public UrunlerORM()
         {
-            
+
 
 
         }

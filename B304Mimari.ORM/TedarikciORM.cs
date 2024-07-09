@@ -5,7 +5,7 @@ using System.Text;
 
 namespace B304Mimari.ORM
 {
-    public class TedarikciORM:ORMBase<Tedarikciler>
+    public class TedarikciORM : ORMBase<Tedarikciler>
     {
 
 

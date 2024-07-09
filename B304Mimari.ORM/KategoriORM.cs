@@ -5,7 +5,7 @@ using System.Text;
 
 namespace B304Mimari.ORM
 {
-    public class KategoriORM:ORMBase<Kategoriler>
+    public class KategoriORM : ORMBase<Kategoriler>
     {
 
 
